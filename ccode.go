@@ -7,4 +7,4 @@ func True() bool
 func Max(a, b int) int
 
 // Inc increments the value of the integer add address p.
-func Inc(v *int)
+func Inc(p *int)

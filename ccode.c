@@ -1,9 +1,9 @@
-#include "runtime.h"	// required for go types like bool and uintptr
+#include "runtime.h"	// required for go types like bool and intptr
 
-// The interpunkt indicates that the function belongs to the current namespace.
-// Without the interpunkt, the function would be defined in the global C namespace,
-// inaccessible to your Go package and potentially conflicting with another C
-// function.
+// The interpunkt indicates that the function belongs to the current
+// namespace. Without the interpunkt, the function would be defined in
+// the global C namespace, inaccessible to your Go package and
+// potentially conflicting with another C function.
 void ·True(bool res) {
 	res = true;
 	FLUSH(&res);
